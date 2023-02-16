@@ -126,6 +126,7 @@ class SerialConnection:
         if self.serial is not None:
             try:
                 # Read from serial and decode the bytes to string
+                self.serial.flushOutput()
                 data = self.serial.readline(size=size).strip().decode('utf-8')
             except serial.SerialException as e:
                 # Set error message if any problem
@@ -145,6 +146,7 @@ class SerialConnection:
             try:
                 # Encode the string message into bytes and write to serial
                 self.serial.write(data.encode())
+                self.serial.flushOutput()
             except serial.SerialException as e:
                 # Set error message if any problem
                 self._error = f"Failed to write to serial port '{self.port}': {e}"
