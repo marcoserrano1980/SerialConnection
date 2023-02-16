@@ -179,9 +179,7 @@ class SerialConnection:
 
 
 # Create a new SerialConnection object with port '/dev/ttyUSB0' and baudrate 9600,
-# and try to open it. Assign the value of the return statement to the 'device' variable.
-#if device = SerialConnection('/dev/ttyUSB0', 9600).open() != True:
-#    print(device.error())
+#device = SerialConnection('/dev/ttyUSB0', 9600)
 #
 # Try to open the serial connection. If opening the connection fails, print the error message.
 #if device.open() != True:
