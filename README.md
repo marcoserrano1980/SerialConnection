@@ -17,8 +17,7 @@ The code is compatible with both Windows and Linux, making it a useful tool for 
 
 You can install the pyserial module, which is used by this library, using pip. Open a terminal or command prompt and type:
 
-<p>Copy code</p>
-pip install pyserial
+<p><b>pip install pyserial</b></p>
 
 <p>Once you have Python and pyserial installed, you can use this library in your Python projects.</p>
 
